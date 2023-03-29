@@ -42,7 +42,7 @@ resource "aws_iam_policy" "this" {
 
 module "crossplane_role" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
-  version = "5.14.4"
+  version = "5.16.0"
 
   create_role                   = true
   role_description              = "Crossplane"
